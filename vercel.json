@@ -1,11 +1,11 @@
 {
   "version": 2,
   "builds": [
-    { "src": "mental-belt.html", "use": "@vercel/static" },
+    { "src": "index.html", "use": "@vercel/static" },
     { "src": "api/submit-lead.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/submit-lead", "dest": "/api/submit-lead.js" },
-    { "src": "/(.*)",            "dest": "/mental-belt.html"   }
+    { "src": "/(.*)",            "dest": "/index.html"   }
   ]
 }
