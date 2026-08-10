@@ -2,10 +2,10 @@
   "version": 2,
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
-    { "src": "api/submit-lead.js", "use": "@vercel/node" }
+    { "src": "submit-lead.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api/submit-lead", "dest": "/api/submit-lead.js" },
-    { "src": "/(.*)",            "dest": "/index.html"   }
+    { "src": "/api/submit-lead", "dest": "/submit-lead.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
